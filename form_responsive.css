@@ -1,0 +1,157 @@
+.identite {
+    display: flex;
+    flex-direction: column;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+}
+
+.prenom {
+    display: flex;
+    flex-direction: column;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+}
+
+.rue {
+    display: flex;
+    flex-direction: column;
+}
+
+.numero {
+    display: flex;
+    flex-direction: column;
+}
+
+.codepostal {
+    display: flex;
+    flex-direction: column;
+}
+
+.ville {
+    display: flex;
+    flex-direction: column;
+}
+
+.preference {
+    display: flex;
+    flex-direction: column;
+}
+
+.langue {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-langue {
+    display: flex;
+}
+
+.radio-activites {
+    display: flex;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 20px 0;
+    width: 100%;
+}
+
+@media screen and (width > 600px) {
+    .nom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nom input {
+        width: 75%;
+    }
+
+    .prenom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .prenom input {
+        width: 75%;
+    }
+
+    .rue {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rue input {
+        width: 75%;
+    }
+
+    .numero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .numero input {
+        width: 75%;
+    }
+
+    .codepostal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .codepostal input {
+        width: 75%;
+    }
+
+    .ville {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ville input {
+        width: 75%;
+    }
+
+    .langue {
+        flex-direction: row;
+    }
+    .langue label:first-child {
+        width: 23% ;
+    }
+    .activites {
+        flex-direction: row;
+    }
+    .activites label:first-child {
+        width: 23%;
+    }
+    .message{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .message textarea{
+        width: 75%;
+    }
+}

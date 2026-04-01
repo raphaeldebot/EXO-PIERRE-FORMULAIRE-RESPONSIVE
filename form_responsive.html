@@ -5,50 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo Pierre formulaire responsive</title>
+    <link rel="stylesheet" href="form_responsive.css">
 </head>
 
 <body>
     <h1>Formulaire Responsive</h1>
     <form action="">
-        <fieldset>
+        <fieldset class="identite">
             <legend>Votre identité</legend>
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom">
-            <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" id="prenom">
+            <div class="nom">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div class="prenom">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+            </div>
         </fieldset>
         <fieldset>
-            <legend>Vos coordonnées</legend>
-            <label for="rue">Rue</label>
-            <input type="text" name="rue" id="rue">
-            <label for="numero">Numéro</label>
-            <input type="text" name="numero" id="numero">
-            <label for="codepost">Code postal</label>
-            <input type="text" name="codepost" id="codepost">
-            <label for="ville">Ville</label>
-            <input type="text" name="ville" id="ville">
+            <legend class="coordonnees">Vos coordonnées</legend>
+            <div class="rue">
+                <label for="rue">Rue</label>
+                <input type="text" name="rue" id="rue">
+            </div>
+            <div class="numero">
+                <label for="numero">Numéro</label>
+                <input type="text" name="numero" id="numero">
+            </div>
+            <div class="codepostal">
+                <label for="codepost">Code postal</label>
+                <input type="text" name="codepost" id="codepost">
+            </div>
+            <div class="ville">
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville">
+            </div>
         </fieldset>
         <fieldset>
-            <legend>Vos préférence</legend>
-            <label>Langue utilisées</label>
-            <input type="radio" id="francais">
-            <label for="francais">Français</label>
-            <input type="radio" id="neerlandais">
-            <label for="neerlandais">Néerlandais</label>
-            <input type="radio" id="allemand">
-            <label for="allemand">Allemand</label>
-            <input type="radio" id="anglais">
-            <label for="anglais">Anglais</label>
-            <label>Activités</label>
-            <label for="cinema">Activités</label>
-            <input type="checkbox" id="cinema">
-            <label for=""></label>
-            
-            <label for=""></label>
-            
-            <label for=""></label>
-            
+            <legend class="preference">Vos préférence</legend>
+            <div class="langue">
+                <label>Langue utilisées</label>
+                <div class="radio-langue">
+                    <input type="radio" id="francais">
+                    <label for="francais">Français</label>
+                </div>
+                <div class="radio-langue">
+                    <input type="radio" id="neerlandais">
+                    <label for="neerlandais">Néerlandais</label>
+                </div>
+                <div class="radio-langue">
+                    <input type="radio" id="allemand">
+                    <label for="allemand">Allemand</label>
+                </div>
+                <div class="radio-langue">
+                    <input type="radio" id="anglais">
+                    <label for="anglais">Anglais</label>
+                </div>
+            </div>
+            <div class="activites">
+                <label>Activités</label>
+                <div class="radio-activites">
+                    <input type="checkbox" id="cinema">
+                    <label for="cinema">Cinéma</label>
+                </div>
+                <div class="radio-activites">
+                    <input type="checkbox" id="sport">
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="radio-activites">
+                    <input type="checkbox" id="lecture">
+                    <label for="lecture">Lecture</label>
+                </div>
+                <div class="radio-activites">
+                    <input type="checkbox" id="jeuxVideo">
+                    <label for="jeuxVideo">Jeux Vidéo</label>
+                </div>
+            </div>
         </fieldset>
+        <div class="message">
+            <label for="message">Votre message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="checkbox" id="consentement">
+        <label for="consentement">Acceptez-vous que vos données soient stockées ?</label>
+        <button type="submit">Envoyer</button>
     </form>
 </body>
 
